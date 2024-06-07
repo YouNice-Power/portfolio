@@ -1,0 +1,332 @@
+/* VARIABLE GLOBAL */
+
+:root {
+    --main-front: 'main';
+    --title-front: 'tile';
+}
+
+
+/* CORPS */
+
+body{
+    font-size: 1em;
+    line-height: 1.2em;
+    background-color: black;
+    color: white;
+    font-family: var(--main-front);
+}
+
+h1,h2,h3,h3,h4{
+    font-family: var(--title-front);
+}
+
+main,header,footer{
+    margin:  0% 20%;
+}
+
+strong {
+    color: red;
+}
+
+hr {
+    border-top-width: 10px;
+    border-top-color: white;
+    border-top-style: double;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url(webfontkit-20240527-030957/bebas-regular-webfont.woff);
+    font-family: 'main';
+    src: url(webfontkit-20240527-030957/cooperhewitt-book-webfont.woff);
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em 15%;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: red;
+}
+nav {
+    text-align: center;
+    padding: 0 1em;
+}
+
+nav ul li {
+    display: inline-block;
+    align-items: center;
+}
+nav li a{
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: left;
+    align-items: center;
+    margin: 3em 20%;
+}
+
+footer section  {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    margin: 0 10%;
+}
+
+
+footer article h4 {
+    margin-bottom: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/*ACCUEIL*/
+
+.sec-moi{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+.sec-moi > img{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+    gap: 30px;
+}
+
+.sec-moi hr {
+    width: 100%;
+}
+
+.big {
+    font-size: 3rem;
+}
+
+.t-qui{
+    font-size: 2.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.moi-age{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+}
+
+.main-qui {
+    text-align: center;
+    margin: 2.5% 42%;
+    border: 1px solid white;
+}
+
+.cv1 {
+    text-align: center;
+    margin: 2em 42%;
+    border: 1px solid white;
+}
+.cpt {
+    text-align: center;
+    margin: 2em 35%;
+    border: 1px solid white;
+}
+.cv{
+    border: 1px solid white;
+    text-align: center;
+
+}
+
+.cv a, .main-qui a, .cpt a, .cv1 a {
+    display: block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-color: white;
+    padding: 5%;
+    letter-spacing: 0.1em;
+} 
+
+.cv a:hover, .main-qui a:hover, .cpt a:hover, .cv1 a:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+/* FORMATION */
+
+.form h1{
+    font-size: 4rem;
+}
+
+.sec-form h1 {
+    font-size: 2rem;
+    margin-top: 0.5em;
+    color: gray;
+}
+
+.sec-form h2 {
+    font-size: 1.5rem;
+}
+
+.sec-form h4 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.sec-form{
+    display: flex;
+}
+
+.sec-form p {
+    margin-left: 0%;
+    margin-right: 70%;
+}
+
+.sec-form li {
+    margin-top: 0.5em;
+}
+
+.l1{
+    border: 1px solid white;
+    text-align: center;
+    margin: 2em 35%;
+
+}
+
+.l1 a {
+    display: block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-color: white;
+    padding: 5%;
+    letter-spacing: 0.1em;
+} 
+
+.l1 a:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+/*COMPETENCES*/
+
+.sec-comp article {
+    margin-top: 5% ;
+}
+
+.art-comp a {
+    display: flex;
+    align-items:end;
+    border-left: 0.5rem solid black;
+    border-bottom: 0.5rem solid white;
+    border-top: 0.5rem solid black;
+    border-right: 0.5rem solid black;
+    text-decoration: none;
+    color: white;
+}
+
+.art-comp a:hover {
+    color: black;
+    background-color: white;
+    border-left: 0.5rem solid black;
+    border-bottom: 0.5rem solid black;
+    border-top: 0.5rem solid black;
+    border-right: 0.5rem solid black ;
+}
+
+
+.art-comp h2{
+    margin-left: 0.5em;
+}
+
+.art-comp p {
+    margin-left: 5em;
+}
+
+.comp hr {
+    margin-top: 5em;
+}
+
+/*COMPETENCE DETAIL*/
+
+.comp1-sec li, .comp2-sec li {
+    margin-bottom: 0.5em;
+}
+
+.comp1 h4 {
+    font-size: 1rem;
+}
+
+.comp1-sec h1, .comp2-sec h1{
+    font-size: 4rem;
+}
+
+.comp1-sec p, .comp2-sec p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.comp1-sec h3, .comp2-sec h3{
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.comp2-sec  {
+    margin-top: 10em;
+}
+
+.code {
+    text-align: center;
+    margin: 2em 40%;
+    border: 1px solid white;
+
+}
+
+.code a{
+    display: block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-color: white;
+    padding: 5%;
+    letter-spacing: 0.1em;
+}
+
+.code a:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
